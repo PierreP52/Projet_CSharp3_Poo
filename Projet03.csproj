@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA01016B-B34E-40AB-8DB7-D5E62ABC6AD4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projet03</RootNamespace>
+    <AssemblyName>Projet03</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Candy.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006123_wacky-monkey_510.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0005871_gyro-pop-12-unites-12g.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0005943_nerds-pechefruit-24un.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0005944_nerds-raisinfraise-24-un.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0005960_oublies-wafers.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006027_poubelle-bonbon-topps-k50544-24x24un-15kg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006048_rocket-geant.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006053_rouleau-rockets.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006055_runts-wonka-24un.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006058_shark-bite.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006063_sifflet-vrac.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006081_sour-foamy-suret.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006093_sweetarts-wonka-10x142g.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006101_thumbs-up-sour-dipper-tower-discontinue.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006113_toxic-waste-drum-sour.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006144_bague-bonbon-fruit.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006189_batonnet-popeye.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006238_nerds-vague-et-plage-24-un.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006239_gobstoppers-reg-24-un.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006257_kadunks.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006261_licky-loot_510.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006262_slime-licker.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006267_text-messenger.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006271_sucon-flip-phone.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0006389_shock-rock-framboise-bleue.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
